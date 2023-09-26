@@ -1,0 +1,17 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int i;
+    double j;
+    cout << "Please enter a number: \n";
+    cin >> i;
+    cout << "You have input: \n" << i << endl;
+    cout << "The octal representation of " << i << " is:" << oct << i << endl;
+    cout << "The hexadecimal representation of " << dec << i << " is:" << hex << i << endl;
+    j = (double)i;
+    cout << "The inverse of " << dec << j << " is:" << 1/j << endl;
+    cout << "The square root of " << j << " is:" << sqrtf(j);
+    return 0;
+}
