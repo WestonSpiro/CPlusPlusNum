@@ -1,16 +1,23 @@
 #include <iostream>
 #include <cmath>
+#include <bitset>
+
 using namespace std;
 int main() {
     int i;
     double j;
     cout << "Please enter a number: \n";
     cin >> i;
-    cout << "You have input: \n" << i << endl;
+    cout << "You have input: " << i << endl;
+    cout << "The binary representation of " << i << " is: ";
+    char a = i;
+    std::bitset<8> x(a);
+    std::cout << x << '\n';
     cout << "The octal representation of " << i << " is:" << oct << i << endl;
     cout << "The hexadecimal representation of " << dec << i << " is:" << hex << i << endl;
     j = (double)i;
     cout << "The inverse of " << dec << j << " is:" << 1/j << endl;
-    cout << "The square root of " << j << " is:" << sqrtf(j);
+    cout << "The square root of " << j << " is:" << sqrtf(j) << endl;
+    cout << i << " Squared is " << i*i;
     return 0;
 }
